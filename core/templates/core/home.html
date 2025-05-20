@@ -1,0 +1,98 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center mb-5 animate-fadeInUp">
+    <h1 class="display-3">Multibpreneur</h1>
+    <h2 class="fs-2 text-secondary mb-4">The Multidisciplinary Venture</h2>
+    <h3 class="fs-4 text-primary mb-4">Let's team up with the right business partner</h3>
+    <div class="d-flex justify-content-center gap-3">
+        <a href="{% url 'business' %}" class="btn btn-primary btn-lg">Start Your Journey</a>
+        <a href="{% url 'about' %}" class="btn btn-outline-primary btn-lg">Learn More</a>
+    </div>
+</div>
+
+<div class="features-section py-5">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100 animate-fadeInUp" style="animation-delay: 0.1s">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-rocket-takeoff fs-1 text-primary"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Innovation Hub</h3>
+                    <p class="text-muted">Discover groundbreaking ideas and innovative solutions for your business challenges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 animate-fadeInUp" style="animation-delay: 0.2s">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-people fs-1 text-primary"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Network & Collaborate</h3>
+                    <p class="text-muted">Connect with like-minded entrepreneurs and industry experts to grow together.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 animate-fadeInUp" style="animation-delay: 0.3s">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Growth Strategy</h3>
+                    <p class="text-muted">Access proven strategies and insights to scale your business effectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section bg-light p-5 rounded-3 mt-5 animate-fadeInUp" style="animation-delay: 0.4s">
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <h2 class="mb-3">Ready to Transform Your Business?</h2>
+            <p class="lead mb-lg-0">Join our community of successful entrepreneurs and take your business to new heights.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Get Started Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="stats-section py-5 mt-5">
+    <div class="row g-4 text-center">
+        <div class="col-md-3 animate-fadeInUp" style="animation-delay: 0.5s">
+            <div class="stat-card p-4">
+                <i class="bi bi-building fs-1 text-primary mb-3"></i>
+                <h3 class="h2 mb-2">500+</h3>
+                <p class="text-muted mb-0">Business Partners</p>
+            </div>
+        </div>
+        <div class="col-md-3 animate-fadeInUp" style="animation-delay: 0.6s">
+            <div class="stat-card p-4">
+                <i class="bi bi-globe fs-1 text-primary mb-3"></i>
+                <h3 class="h2 mb-2">20+</h3>
+                <p class="text-muted mb-0">Countries</p>
+            </div>
+        </div>
+        <div class="col-md-3 animate-fadeInUp" style="animation-delay: 0.7s">
+            <div class="stat-card p-4">
+                <i class="bi bi-trophy fs-1 text-primary mb-3"></i>
+                <h3 class="h2 mb-2">150+</h3>
+                <p class="text-muted mb-0">Success Stories</p>
+            </div>
+        </div>
+        <div class="col-md-3 animate-fadeInUp" style="animation-delay: 0.8s">
+            <div class="stat-card p-4">
+                <i class="bi bi-stars fs-1 text-primary mb-3"></i>
+                <h3 class="h2 mb-2">98%</</h3>
+                <p class="text-muted mb-0">Client Satisfaction</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

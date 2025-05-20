@@ -1,0 +1,59 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# Virtual Environment
+venv/
+ENV/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+/static/
+/media/
+*.env
+.env.local
+.env.*.local
+
+# Ignore all .pyc files
+*.pyc
+
+# Ignore coverage reports
+.coverage
+htmlcov/
+
+# Ignore local development settings
+/multibpreneur_website/settings/local.py
+
+# Dependencies
+node_modules/

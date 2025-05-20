@@ -1,0 +1,79 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<div class="blog-hero text-center mb-5 animate-fadeInUp">
+    <h1 class="display-4 mb-3">Our Blog</h1>
+    <p class="lead text-muted">Insights, Updates, and Industry Trends</p>
+</div>
+
+{% if posts %}
+    <div class="row g-4">
+        {% for post in posts %}
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100 blog-card animate-fadeInUp">
+                    <div class="card-body p-4">
+                        <div class="post-category mb-2">
+                            <span class="badge bg-primary">Business</span>
+                        </div>
+                        <h2 class="card-title h5 mb-3">{{ post.title }}</h2>
+                        <p class="card-text text-muted">{{ post.content|truncatewords:30 }}</p>
+                        <div class="post-meta mt-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="date text-muted small">
+                                    <i class="bi bi-calendar3 me-1"></i>
+                                    {{ post.publication_date|date:"F j, Y" }}
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="blog-pagination mt-5 text-center">
+        <nav aria-label="Blog navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% else %}
+    <div class="text-center py-5 animate-fadeInUp">
+        <div class="empty-state">
+            <i class="bi bi-pencil-square fs-1 text-primary mb-3"></i>
+            <h2 class="h4 mb-3">Coming Soon!</h2>
+            <p class="text-muted mb-4">Stay tuned for our latest updates and insights! We're working on bringing you valuable content.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get Notified</a>
+        </div>
+    </div>
+{% endif %}
+
+<div class="newsletter-section bg-light p-5 rounded-3 mt-5 animate-fadeInUp">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h2 class="h3 mb-3">Subscribe to Our Newsletter</h2>
+            <p class="text-muted mb-lg-0">Get the latest insights and trends delivered straight to your inbox.</p>
+        </div>
+        <div class="col-lg-6">
+            <form class="newsletter-form">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
