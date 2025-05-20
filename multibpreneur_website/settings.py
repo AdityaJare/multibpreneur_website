@@ -133,6 +133,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "core" / "static",
 ]
 
+# Authentication settings
+LOGIN_REDIRECT_URL = '/'  # Redirect to home page after login
+LOGOUT_REDIRECT_URL = '/'  # Redirect to home page after logout
+
 # Media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

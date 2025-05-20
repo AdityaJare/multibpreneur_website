@@ -24,7 +24,6 @@ def home(request):
 def about(request):
     return render(request, 'core/about.html')
 
-@login_required
 def business(request):
     if request.method == 'POST':
         form = BusinessInquiryForm(request.POST, request.FILES)
