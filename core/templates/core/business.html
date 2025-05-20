@@ -5,7 +5,7 @@
 
 {% block content %}
 <div class="business-hero text-center mb-5 animate-fadeInUp">
-    <h1 class="display-4 mb-3">Business Inquiry</h1>
+    <h1 class="display-4 mb-3">Business Partnership & Collaboration</h1>
     <p class="lead text-muted">Tell us about your business needs and let's explore opportunities together.</p>
 </div>
 
@@ -16,32 +16,34 @@
                 <div class="service-icon mb-3">
                     <i class="bi bi-lightbulb fs-1 text-primary"></i>
                 </div>
-                <h3 class="h4 mb-3">Strategic Planning</h3>
-                <p class="text-muted">Develop comprehensive business strategies tailored to your goals and market position.</p>
+                <!-- <h3 class="h4 mb-3">Strategic Planning</h3>
+                <p class="text-muted">Develop comprehensive business strategies tailored to your goals and market
+                    position.</p> -->
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.2s">
         <div class="service-card card h-100">
             <div class="card-body p-4 text-center">
                 <div class="service-icon mb-3">
                     <i class="bi bi-puzzle fs-1 text-primary"></i>
                 </div>
-                <h3 class="h4 mb-3">Business Solutions</h3>
-                <p class="text-muted">Custom solutions designed to address your specific business challenges and needs.</p>
+                <!-- <h3 class="h4 mb-3">Business Solutions</h3>
+                <p class="text-muted">Custom solutions designed to address your specific business challenges and needs. -->
+                </p>
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.3s">
         <div class="service-card card h-100">
             <div class="card-body p-4 text-center">
                 <div class="service-icon mb-3">
                     <i class="bi bi-graph-up fs-1 text-primary"></i>
                 </div>
-                <h3 class="h4 mb-3">Growth Acceleration</h3>
-                <p class="text-muted">Accelerate your business growth with proven methodologies and expert guidance.</p>
+                <!-- <h3 class="h4 mb-3">Growth Acceleration</h3>
+                <p class="text-muted">Accelerate your business growth with proven methodologies and expert guidance.</p> -->
             </div>
         </div>
     </div>
@@ -50,49 +52,49 @@
 <div class="row g-4 mb-5">
     <div class="col-lg-6 animate-fadeInUp" style="animation-delay: 0.4s">
         <div class="bg-light p-4 rounded-3 h-100">
-            <h2 class="h3 mb-4">Why Partner With Us?</h2>
+            <h2 class="h3 mb-4">What We Do at Multibpreneur ?</h2>
             <ul class="feature-list list-unstyled">
                 <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                    Expert guidance from industry professionals
+                    At Multibpreneur; We Run, Own, Build, Manage, Aquire, Trade, Introduce, Invest, Work, Assist,
+                    Consult, Partner And Much More For People, Business, MSME, HNI, Startup, Venture & Other.
                 </li>
                 <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                    Access to exclusive business networks
+                    We Are Building Connecting Dots For Complete Business Ecosystem; Multidisciplinary Venture.
                 </li>
                 <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                    Customized solutions for your business
+                    Multibpreneur also work for Social Impact; Contribution & Nurturing of People, Planet & Economy By
+                    it's Owner's. It's Lifetime Mission.
                 </li>
-                <li class="mb-3">
+                <!-- <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
                     Ongoing support and consultation
-                </li>
+                </li> -->
             </ul>
-            
+
             <div class="contact-info mt-4">
-                <h3 class="h5">For Business Inquiries</h3>
+                <h3 class="h5">For Business Partnership & Collaboration</h3>
                 <p class="mb-2">
                     <i class="bi bi-envelope me-2"></i>
                     <a href="mailto:business@multibpreneur.com" class="text-primary">business@multibpreneur.com</a>
                 </p>
-                <p class="mb-0">
+                <!-- <p class="mb-0">
                     <i class="bi bi-telephone me-2"></i>
                     <a href="tel:+15551234567" class="text-primary">+1 (555) 123-4567</a>
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
 
     <div class="col-lg-6 animate-fadeInUp" style="animation-delay: 0.5s">
         <div class="bg-light p-4 rounded-3">
-            <h2 class="h3 mb-4">Start Your Partnership Journey</h2>
+            <h2 class="h3 mb-4">Let's create something extraordinary together</h2>
             <form method="post" class="partnership-form">
                 {% csrf_token %}
                 {% bootstrap_form form %}
-                <div class="d-grid">
-                    {% bootstrap_button button_type="submit" content="Submit Inquiry" button_class="btn-primary btn-lg" %}
-                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 mt-4">Submit Form</button>
             </form>
         </div>
     </div>
@@ -118,66 +120,66 @@
 
 {% block extra_js %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
 
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const submitButton = form.querySelector('[type="submit"]');
-        const originalText = submitButton.innerHTML;
-        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
-        submitButton.disabled = true;
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const submitButton = form.querySelector('[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
+            submitButton.disabled = true;
 
-        try {
-            const formData = new FormData(form);
-            const response = await fetch(window.location.href, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-CSRFToken': formData.get('csrfmiddlewaretoken')
-                }
-            });
-
-            const data = await response.json();
-            
-            if (data.status === 'success') {
-                document.getElementById('successMessage').textContent = data.message;
-                form.reset();
-                successModal.show();
-            } else if (data.errors) {
-                // Handle validation errors
-                Object.entries(data.errors).forEach(([field, errors]) => {
-                    const input = form.querySelector(`[name="${field}"]`);
-                    if (input) {
-                        input.classList.add('is-invalid');
-                        const feedback = input.parentElement.querySelector('.invalid-feedback') 
-                            || document.createElement('div');
-                        feedback.className = 'invalid-feedback';
-                        feedback.textContent = errors.join(' ');
-                        if (!input.parentElement.querySelector('.invalid-feedback')) {
-                            input.parentElement.appendChild(feedback);
-                        }
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(window.location.href, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': formData.get('csrfmiddlewaretoken')
                     }
                 });
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('An error occurred. Please try again.');
-        } finally {
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-        }
-    });
 
-    // Clear validation errors when user starts typing
-    form.querySelectorAll('input, textarea').forEach(input => {
-        input.addEventListener('input', () => {
-            input.classList.remove('is-invalid');
-            const feedback = input.parentElement.querySelector('.invalid-feedback');
-            if (feedback) feedback.remove();
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    document.getElementById('successMessage').textContent = data.message;
+                    form.reset();
+                    successModal.show();
+                } else if (data.errors) {
+                    // Handle validation errors
+                    Object.entries(data.errors).forEach(([field, errors]) => {
+                        const input = form.querySelector(`[name="${field}"]`);
+                        if (input) {
+                            input.classList.add('is-invalid');
+                            const feedback = input.parentElement.querySelector('.invalid-feedback')
+                                || document.createElement('div');
+                            feedback.className = 'invalid-feedback';
+                            feedback.textContent = errors.join(' ');
+                            if (!input.parentElement.querySelector('.invalid-feedback')) {
+                                input.parentElement.appendChild(feedback);
+                            }
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            } finally {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }
+        });
+
+        // Clear validation errors when user starts typing
+        form.querySelectorAll('input, textarea').forEach(input => {
+            input.addEventListener('input', () => {
+                input.classList.remove('is-invalid');
+                const feedback = input.parentElement.querySelector('.invalid-feedback');
+                if (feedback) feedback.remove();
+            });
         });
     });
-});
 </script>
 {% endblock %}

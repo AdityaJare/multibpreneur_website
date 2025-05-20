@@ -32,9 +32,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item ms-2">
                         <button class="btn btn-outline-light btn-sm theme-toggle" type="button">
                             <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
@@ -65,35 +65,33 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <h5 class="fw-bold mb-3">Multibpreneur</h5>
-                    <p class="text-muted">Empowering entrepreneurs with multidisciplinary solutions for business growth and innovation.</p>
+                    <p class=" text-light"> The Multidisciplinary Venture.</p>
                     <div class="social-links mt-3">
-                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1ApY28q16g/?mibextid=qi2Omg" class="me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/97640828" class="me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/multibpreneur?igsh=eDdlczRqNXJtYmQ3" class="me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="fw-bold mb-3">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'business' %}">Business</a></li>
-                        <li><a href="{% url 'blog' %}">Blog</a></li>
-                        <li><a href="{% url 'about' %}">About Us</a></li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li class="fw-bold"><a href="{% url 'business' %}">Business</a></li>
+                        <li class="fw-bold"><a href="{% url 'about' %}">About Us</a></li>
+                        <!-- <li class="fw-bold"><a href="{% url 'home' %}">Home</a></li> -->
+                        <!-- <li class="fw-bold"><a href="{% url 'blog' %}">Blog</a></li> -->
+                        <!-- <li class="fw-bold"><a href="{% url 'contact' %}">Contact</a></li> -->
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="fw-bold mb-3">Contact Info</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><i class="bi bi-geo-alt me-2"></i>123 Business Ave, Suite 100</li>
-                        <li><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</li>
-                        <li><i class="bi bi-envelope me-2"></i>contact@multibpreneur.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Pune, Maharashtra , India</li>
+                        <li><i class="bi bi-envelope me-2"></i>business@multibpreneur.com</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <p class="text-muted">Subscribe to our newsletter for updates and insights.</p>
+                    <!-- <p class="text-light">Subscribe to our newsletter for updates and insights.</p> -->
                     <form class="mt-3">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Your email">
@@ -108,8 +106,8 @@
                     <p class="mb-0">&copy; {% now "Y" %} Multibpreneur. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-muted me-3">Privacy Policy</a>
-                    <a href="#" class="text-muted">Terms of Service</a>
+                    <a href="#" class="fw-bold text-light me-3">Privacy Policy</a>
+                    <a href="#" class="fw-bold text-light">Terms of Service</a>
                 </div>
             </div>
         </div>
