@@ -23,6 +23,8 @@ from core.views import (
     BlogPostViewSet, BusinessInquiryViewSet, ContactInquiryViewSet,
     CategoryViewSet, TagViewSet
 )
+from django.views.generic import TemplateView
+from django.conf.urls import handler404, handler500
 
 # Create a router for API views
 router = DefaultRouter()
@@ -31,6 +33,10 @@ router.register(r'api/business-inquiries', BusinessInquiryViewSet)
 router.register(r'api/contact-inquiries', ContactInquiryViewSet)
 router.register(r'api/categories', CategoryViewSet)
 router.register(r'api/tags', TagViewSet)
+
+# Error handlers
+handler404 = 'core.views.custom_404'
+handler500 = 'core.views.custom_500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
